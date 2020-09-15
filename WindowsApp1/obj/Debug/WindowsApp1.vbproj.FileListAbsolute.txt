@@ -1,0 +1,43 @@
+C:\Users\kart\source\repos\WindowsApp1\WindowsApp1\bin\Debug\WindowsApp1.exe.config
+C:\Users\kart\source\repos\WindowsApp1\WindowsApp1\bin\Debug\WindowsApp1.exe
+C:\Users\kart\source\repos\WindowsApp1\WindowsApp1\bin\Debug\WindowsApp1.pdb
+C:\Users\kart\source\repos\WindowsApp1\WindowsApp1\bin\Debug\WindowsApp1.xml
+C:\Users\kart\source\repos\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.Resources.resources
+C:\Users\kart\source\repos\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.vbproj.GenerateResource.cache
+C:\Users\kart\source\repos\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.vbproj.CoreCompileInputs.cache
+C:\Users\kart\source\repos\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.exe
+C:\Users\kart\source\repos\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.xml
+C:\Users\kart\source\repos\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.pdb
+C:\Users\kart\source\repos\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.frmlogin.resources
+C:\Users\kart\source\repos\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.frmmain.resources
+C:\Users\kart\source\repos\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.frmconfig.resources
+C:\Users\kart\source\repos\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.vbprojAssemblyReference.cache
+C:\VB\WindowsApp1\WindowsApp1\bin\Debug\WindowsApp1.exe.config
+C:\VB\WindowsApp1\WindowsApp1\bin\Debug\WindowsApp1.exe
+C:\VB\WindowsApp1\WindowsApp1\bin\Debug\WindowsApp1.pdb
+C:\VB\WindowsApp1\WindowsApp1\bin\Debug\WindowsApp1.xml
+C:\VB\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.vbprojAssemblyReference.cache
+C:\VB\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.frmlogin.resources
+C:\VB\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.frmmain.resources
+C:\VB\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.frmconfig.resources
+C:\VB\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.Resources.resources
+C:\VB\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.vbproj.GenerateResource.cache
+C:\VB\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.vbproj.CoreCompileInputs.cache
+C:\VB\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.exe
+C:\VB\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.xml
+C:\VB\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.pdb
+D:\_DotNet_Project\New folder\WindowsApp1\WindowsApp1\WindowsApp1\bin\Debug\WindowsApp1.exe.config
+D:\_DotNet_Project\New folder\WindowsApp1\WindowsApp1\WindowsApp1\bin\Debug\WindowsApp1.exe
+D:\_DotNet_Project\New folder\WindowsApp1\WindowsApp1\WindowsApp1\bin\Debug\WindowsApp1.pdb
+D:\_DotNet_Project\New folder\WindowsApp1\WindowsApp1\WindowsApp1\bin\Debug\WindowsApp1.xml
+D:\_DotNet_Project\New folder\WindowsApp1\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.vbprojAssemblyReference.cache
+D:\_DotNet_Project\New folder\WindowsApp1\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.frmlogin.resources
+D:\_DotNet_Project\New folder\WindowsApp1\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.frmmain.resources
+D:\_DotNet_Project\New folder\WindowsApp1\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.frmconfig.resources
+D:\_DotNet_Project\New folder\WindowsApp1\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.Resources.resources
+D:\_DotNet_Project\New folder\WindowsApp1\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.vbproj.GenerateResource.cache
+D:\_DotNet_Project\New folder\WindowsApp1\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.vbproj.CoreCompileInputs.cache
+D:\_DotNet_Project\New folder\WindowsApp1\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.exe
+D:\_DotNet_Project\New folder\WindowsApp1\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.xml
+D:\_DotNet_Project\New folder\WindowsApp1\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.pdb
+D:\_DotNet_Project\New folder\WindowsApp1\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.frmDatatable.resources
