@@ -1,6 +1,6 @@
 ﻿
 Imports WindowsApp1.CUtility
-Public Class frmmain
+Public Class frmMain
     Private Const intTotalMonth As Integer = 12
     Private intA As Int16
     Dim objUI As New CUtility

@@ -1,5 +1,5 @@
 ﻿Imports WindowsApp1.CUtility
-Public Class frmlogin
+Public Class frmLogin
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.txtUser.Focus()
     End Sub
@@ -27,7 +27,7 @@ Public Class frmlogin
         If Me.checknot_emty() = True Then
 
 
-            Dim f As New frmmain
+            Dim f As New frmMain
             f.Show()
         End If
     End Sub

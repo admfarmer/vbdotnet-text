@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frmmain
+Partial Class frmMain
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -23,6 +23,9 @@ Partial Class frmmain
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.txtsso = New System.Windows.Forms.TextBox()
+        Me.chksso = New System.Windows.Forms.CheckBox()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -37,9 +40,6 @@ Partial Class frmmain
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.chksso = New System.Windows.Forms.CheckBox()
-        Me.txtsso = New System.Windows.Forms.TextBox()
-        Me.Label8 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -66,6 +66,33 @@ Partial Class frmmain
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(366, 365)
         Me.Panel1.TabIndex = 0
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(204, 151)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(15, 13)
+        Me.Label8.TabIndex = 15
+        Me.Label8.Text = "%"
+        '
+        'txtsso
+        '
+        Me.txtsso.Location = New System.Drawing.Point(149, 148)
+        Me.txtsso.Name = "txtsso"
+        Me.txtsso.Size = New System.Drawing.Size(49, 20)
+        Me.txtsso.TabIndex = 14
+        Me.txtsso.Text = "5"
+        '
+        'chksso
+        '
+        Me.chksso.AutoSize = True
+        Me.chksso.Location = New System.Drawing.Point(149, 124)
+        Me.chksso.Name = "chksso"
+        Me.chksso.Size = New System.Drawing.Size(63, 17)
+        Me.chksso.TabIndex = 13
+        Me.chksso.Text = "หัก ปกส"
+        Me.chksso.UseVisualStyleBackColor = True
         '
         'btnExit
         '
@@ -196,41 +223,14 @@ Partial Class frmmain
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False
         '
-        'chksso
-        '
-        Me.chksso.AutoSize = True
-        Me.chksso.Location = New System.Drawing.Point(149, 124)
-        Me.chksso.Name = "chksso"
-        Me.chksso.Size = New System.Drawing.Size(63, 17)
-        Me.chksso.TabIndex = 13
-        Me.chksso.Text = "หัก ปกส"
-        Me.chksso.UseVisualStyleBackColor = True
-        '
-        'txtsso
-        '
-        Me.txtsso.Location = New System.Drawing.Point(149, 148)
-        Me.txtsso.Name = "txtsso"
-        Me.txtsso.Size = New System.Drawing.Size(49, 20)
-        Me.txtsso.TabIndex = 14
-        Me.txtsso.Text = "5"
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(204, 151)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(15, 13)
-        Me.Label8.TabIndex = 15
-        Me.Label8.Text = "%"
-        '
-        'frmmain
+        'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(673, 409)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Panel1)
-        Me.Name = "frmmain"
+        Me.Name = "frmMain"
         Me.Text = "โปรแกรมคำนวณภาษี"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()

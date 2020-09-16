@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frmconfig
+Partial Class frmConfig
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -107,13 +107,13 @@ Partial Class frmconfig
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "API Value :"
         '
-        'frmconfig
+        'frmConfig
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(499, 174)
         Me.Controls.Add(Me.Panel1)
-        Me.Name = "frmconfig"
+        Me.Name = "frmConfig"
         Me.Text = "ตั้งค่าฐานข้อมูล"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()

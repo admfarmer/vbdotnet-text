@@ -1,7 +1,7 @@
 ﻿Imports System.Xml
 
 
-Public Class frmconfig
+Public Class frmConfig
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles txt_Xml.TextChanged
 
     End Sub
