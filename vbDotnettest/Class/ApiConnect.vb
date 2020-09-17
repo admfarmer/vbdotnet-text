@@ -67,4 +67,157 @@ Public Class ApiConnect
 
         End Try
     End Function
+
+    Public Shared Function addDataToAPI(ByVal API_URL As String,
+                                 ByVal strToken As String,
+                                  ByVal strRoute As String,
+                                  ByVal methodType As String,
+                                 ByVal dictData As Dictionary(Of String, Object)) As Boolean
+        Dim resByte As Byte()
+        Dim resString As String
+        Dim reqString() As Byte
+        Dim json As JObject
+
+        Try
+            '     For i As Integer = 1 To 1000
+            Dim webClient As New WebClient()
+            '   Dim request = TryCast(System.Net.WebRequest.Create(API_URL & "users/info"), System.Net.HttpWebRequest)
+            Dim t As String = strToken
+
+            webClient.Headers("content-type") = "application/json"
+            webClient.Headers.Add(HttpRequestHeader.Authorization, "Bearer " & t & " ")
+            reqString = Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(dictData, Formatting.Indented))
+
+
+            resByte = webClient.UploadData(API_URL & strRoute, methodType, reqString)
+            resString = Encoding.Default.GetString(resByte)
+            json = JObject.Parse(resString)
+
+            If json.SelectToken("statusCode") = "200" Then
+                MsgBox("success", MsgBoxStyle.Information)
+                Return True
+
+            Else
+                Return False
+                MsgBox("Error", MsgBoxStyle.Critical)
+
+            End If
+
+        Catch ex As Exception
+            MsgBox("Error", ex.Message)
+            Return False
+        End Try
+
+    End Function
+
+    Public Shared Function updateDataToAPI(ByVal API_URL As String,
+                                    ByVal strToken As String,
+                                     ByVal strRoute As String,
+                                     ByVal methodType As String,
+                                    ByVal dictData As Dictionary(Of String, Object),
+                                    ByVal strCondition As String) As Boolean
+        Dim resByte As Byte()
+        Dim resString As String
+        Dim reqString() As Byte
+        Dim json As JObject
+
+        Try
+            '     For i As Integer = 1 To 1000
+            Dim webClient As New WebClient()
+            '   Dim request = TryCast(System.Net.WebRequest.Create(API_URL & "users/info"), System.Net.HttpWebRequest)
+            Dim t As String = strToken
+
+            webClient.Headers("content-type") = "application/json"
+            webClient.Headers.Add(HttpRequestHeader.Authorization, "Bearer " & t & " ")
+            reqString = Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(dictData, Formatting.Indented))
+
+
+            resByte = webClient.UploadData(API_URL & strRoute & strCondition, methodType, reqString)
+            resString = Encoding.Default.GetString(resByte)
+            json = JObject.Parse(resString)
+
+            If json.SelectToken("statusCode") = "200" Then
+                MsgBox("success", MsgBoxStyle.Information)
+                Return True
+
+            Else
+                MsgBox("Error", MsgBoxStyle.Critical)
+                Return False
+            End If
+
+        Catch ex As Exception
+            MsgBox("Error", ex.Message)
+            Return False
+        End Try
+
+    End Function
+
+    Public Shared Function deleleteDataToAPI(ByVal API_URL As String,
+                                     ByVal strToken As String,
+                                     ByVal strRoute As String,
+                                     ByVal strCondition As String) As Boolean
+
+        Dim client As New HttpClient()
+        Try
+            Dim t As String = strToken
+            client.BaseAddress = New Uri(API_URL)
+            client.DefaultRequestHeaders.Authorization = New Headers.AuthenticationHeaderValue("Bearer", t)
+            Dim respone = client.DeleteAsync(strRoute & strCondition).Result
+            If respone.StatusCode = 200 Then
+                MsgBox("success", MsgBoxStyle.Information)
+                Return True
+            Else
+                MsgBox("Error", MsgBoxStyle.Critical)
+                Return False
+            End If
+        Catch ex As Exception
+            MsgBox("Error", ex.Message)
+            Return False
+        End Try
+    End Function
+
+    Public Shared Function queryDataAPI(ByVal API_URL As String,
+                                    ByVal strToken As String,
+                                     ByVal strRoute As String,
+                                     ByVal methodType As String,
+                                    ByVal dictData As Dictionary(Of String, Object)) As DataTable
+
+        Dim resByte As Byte()
+        Dim resString As String
+        Dim reqString() As Byte
+        Dim json As JObject
+        Dim dt As New DataTable
+
+        Try
+            Dim webClient As New WebClient()
+            Dim t As String = strToken
+
+            webClient.Headers("content-type") = "application/json"
+            webClient.Headers.Add(HttpRequestHeader.Authorization, "Bearer " & t & " ")
+            reqString = Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(dictData, Formatting.Indented))
+
+
+            resByte = webClient.UploadData(API_URL & strRoute, methodType, reqString)
+            resString = Encoding.Default.GetString(resByte)
+            json = JObject.Parse(resString)
+            ' MsgBox(json)
+
+            If json.SelectToken("statusCode") = "200" Then
+
+                Dim jsonArray As JArray = json.SelectToken("results")
+                dt = Newtonsoft.Json.JsonConvert.DeserializeObject(Of DataTable)(jsonArray.ToString)
+
+                Return dt
+
+            Else
+                MsgBox("Error", MsgBoxStyle.Critical)
+                Return Nothing
+            End If
+
+        Catch ex As Exception
+            MsgBox("Error", ex.Message)
+            Return Nothing
+        End Try
+    End Function
+
 End Class

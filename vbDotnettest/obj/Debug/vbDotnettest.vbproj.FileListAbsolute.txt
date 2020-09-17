@@ -39,3 +39,24 @@ D:\_DotNet_Project\New folder\WindowsApp1\vbDotnettest\WindowsApp1\obj\Debug\Win
 D:\_DotNet_Project\New folder\WindowsApp1\vbDotnettest\WindowsApp1\obj\Debug\WindowsApp1.frmGitveiw.resources
 D:\_DotNet_Project\New folder\WindowsApp1\vbDotnettest\WindowsApp1\bin\Debug\Newtonsoft.Json.dll
 D:\_DotNet_Project\New folder\WindowsApp1\vbDotnettest\WindowsApp1\bin\Debug\Newtonsoft.Json.xml
+D:\_DotNet_Project\vbDotnettest\vbDotnettest\obj\Debug\vbDotnettest.vbprojAssemblyReference.cache
+D:\_DotNet_Project\vbDotnettest\vbDotnettest\obj\Debug\vbDotnettest.vbproj.GenerateResource.cache
+D:\_DotNet_Project\vbDotnettest\vbDotnettest\obj\Debug\vbDotnettest.vbproj.CoreCompileInputs.cache
+D:\_DotNet_Project\vbDotnettest\vbDotnettest\bin\Debug\WindowsApp1.exe.config
+D:\_DotNet_Project\vbDotnettest\vbDotnettest\bin\Debug\WindowsApp1.exe
+D:\_DotNet_Project\vbDotnettest\vbDotnettest\bin\Debug\WindowsApp1.pdb
+D:\_DotNet_Project\vbDotnettest\vbDotnettest\bin\Debug\WindowsApp1.xml
+D:\_DotNet_Project\vbDotnettest\vbDotnettest\bin\Debug\MySql.Data.dll
+D:\_DotNet_Project\vbDotnettest\vbDotnettest\bin\Debug\Newtonsoft.Json.dll
+D:\_DotNet_Project\vbDotnettest\vbDotnettest\bin\Debug\Newtonsoft.Json.xml
+D:\_DotNet_Project\vbDotnettest\vbDotnettest\obj\Debug\WindowsApp1.frmConnectApi.resources
+D:\_DotNet_Project\vbDotnettest\vbDotnettest\obj\Debug\WindowsApp1.frmGitveiw.resources
+D:\_DotNet_Project\vbDotnettest\vbDotnettest\obj\Debug\WindowsApp1.frmLogin.resources
+D:\_DotNet_Project\vbDotnettest\vbDotnettest\obj\Debug\WindowsApp1.frmMain.resources
+D:\_DotNet_Project\vbDotnettest\vbDotnettest\obj\Debug\WindowsApp1.frmConfig.resources
+D:\_DotNet_Project\vbDotnettest\vbDotnettest\obj\Debug\WindowsApp1.frmDatatable.resources
+D:\_DotNet_Project\vbDotnettest\vbDotnettest\obj\Debug\WindowsApp1.Resources.resources
+D:\_DotNet_Project\vbDotnettest\vbDotnettest\obj\Debug\vbDotnettest.vbproj.CopyComplete
+D:\_DotNet_Project\vbDotnettest\vbDotnettest\obj\Debug\WindowsApp1.exe
+D:\_DotNet_Project\vbDotnettest\vbDotnettest\obj\Debug\WindowsApp1.xml
+D:\_DotNet_Project\vbDotnettest\vbDotnettest\obj\Debug\WindowsApp1.pdb
