@@ -4,21 +4,21 @@ Imports WindowsApp1.Report_Users
 Public Class frmReport
     Public Pdt As DataTable
     Dim rpt As ReportDocument
+    Dim ds As DataSet = New DataSet()
+    Dim dt As DataTable = Nothing
 
     Private Sub frmReport_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         LoadReport()
-
     End Sub
 
     Private Sub LoadReport()
 
-        Dim ds As DataSet = New DataSet()
-        Dim dt As DataTable = Nothing
+
 
         Try
 
             dt = New DataTable
-            dt = Pdt
+            dt = Pdt.Copy
 
 
             If Not dt Is Nothing Then
@@ -28,9 +28,11 @@ Public Class frmReport
 
                 rpt = New Report_Users
                 rpt.SetDataSource(ds)
-                ds.Dispose()
                 Me.CrystalReportViewer1.ReportSource = Nothing
                 Me.CrystalReportViewer1.ReportSource = rpt
+                ds.Dispose()
+                dt.Dispose()
+
             End If
 
 
@@ -43,5 +45,11 @@ Public Class frmReport
         End Try
 
 
+    End Sub
+
+    Private Sub frmReport_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
+        rpt.Dispose()
+        ds.Dispose()
+        Me.Dispose()
     End Sub
 End Class
