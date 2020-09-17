@@ -7,6 +7,7 @@ Imports Newtonsoft.Json
 Imports Newtonsoft.Json.Linq
 
 Public Class frmConnectApi
+    Dim dt As New DataTable
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles txtApi.TextChanged
 
     End Sub
@@ -32,7 +33,7 @@ Public Class frmConnectApi
     Private Sub getInfo()
         Dim strMethodType As String = "GET"
         Dim strRoute As String = "users/info"
-        Dim dt As New DataTable
+
         dt = getDatafromAPI(Me.txtApi.Text, strRoute, strMethodType, Me.txtToken.Text)
         If dt.Rows.Count > 0 Then
             Me.DataGridView1.DataSource = dt
@@ -43,7 +44,7 @@ Public Class frmConnectApi
 
     Private Sub frmConnectApi_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         loadToken()
-        'getInfo()
+        getInfo()
         loadClear()
     End Sub
 
@@ -175,9 +176,31 @@ Public Class frmConnectApi
         Dim strRoute As String = "users/user_query"
         Dim dt As New DataTable
         dt = queryDataAPI(Me.txtApi.Text, Me.txtToken.Text, strRoute, strMethodType, dictData)
-        If dt.Rows.Count > 0 Then
+        If Not dt Is Nothing AndAlso dt.Rows.Count > 0 Then
             Me.DataGridView1.DataSource = dt
             Me.lblTotal.Text = dt.Rows.Count
         End If
     End Sub
+
+    Private Sub btnReport_Click(sender As Object, e As EventArgs) Handles btnReport.Click
+        printreport()
+    End Sub
+
+    Private Sub printreport()
+        Try
+
+
+
+            Dim fprint As New frmReport
+            fprint.pdt = dt
+            fprint.Show()
+
+
+
+        Catch ex As Exception
+
+        End Try
+    End Sub
+
+
 End Class

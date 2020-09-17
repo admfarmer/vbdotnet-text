@@ -53,6 +53,7 @@ Partial Class frmConnectApi
         Me.txtQuery = New System.Windows.Forms.TextBox()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.btnQuery = New System.Windows.Forms.Button()
+        Me.btnReport = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -106,7 +107,7 @@ Partial Class frmConnectApi
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Location = New System.Drawing.Point(12, 506)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(641, 88)
+        Me.DataGridView1.Size = New System.Drawing.Size(498, 88)
         Me.DataGridView1.TabIndex = 4
         '
         'bunGetinfo
@@ -344,11 +345,21 @@ Partial Class frmConnectApi
         Me.btnQuery.Text = "Selete"
         Me.btnQuery.UseVisualStyleBackColor = True
         '
+        'btnReport
+        '
+        Me.btnReport.Location = New System.Drawing.Point(556, 523)
+        Me.btnReport.Name = "btnReport"
+        Me.btnReport.Size = New System.Drawing.Size(85, 44)
+        Me.btnReport.TabIndex = 13
+        Me.btnReport.Text = "Report"
+        Me.btnReport.UseVisualStyleBackColor = True
+        '
         'frmConnectApi
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(673, 620)
+        Me.Controls.Add(Me.btnReport)
         Me.Controls.Add(Me.btnQuery)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.txtQuery)
@@ -400,4 +411,5 @@ Partial Class frmConnectApi
     Friend WithEvents txtQuery As TextBox
     Friend WithEvents Label11 As Label
     Friend WithEvents btnQuery As Button
+    Friend WithEvents btnReport As Button
 End Class

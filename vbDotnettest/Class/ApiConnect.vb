@@ -24,9 +24,9 @@ Public Class ApiConnect
             Return json.SelectToken("token")
 
         Catch ex As Exception
-            Return ""
-
+            MsgBox("Error" & ex.Message, MsgBoxStyle.Critical)
             Console.WriteLine(ex.Message)
+            Return ""
         End Try
         Return False
     End Function
@@ -63,6 +63,8 @@ Public Class ApiConnect
 
             Return dt
         Catch ex As Exception
+            MsgBox("Error" & ex.Message, MsgBoxStyle.Critical)
+            Console.WriteLine(ex.Message)
             Return Nothing
 
         End Try
@@ -104,7 +106,8 @@ Public Class ApiConnect
             End If
 
         Catch ex As Exception
-            MsgBox("Error", ex.Message)
+            MsgBox("Error" & ex.Message, MsgBoxStyle.Critical)
+            Console.WriteLine(ex.Message)
             Return False
         End Try
 
@@ -146,7 +149,8 @@ Public Class ApiConnect
             End If
 
         Catch ex As Exception
-            MsgBox("Error", ex.Message)
+            Console.WriteLine(ex.Message)
+            MsgBox("Error" & ex.Message, MsgBoxStyle.Critical)
             Return False
         End Try
 
@@ -171,7 +175,8 @@ Public Class ApiConnect
                 Return False
             End If
         Catch ex As Exception
-            MsgBox("Error", ex.Message)
+            Console.WriteLine(ex.Message)
+            MsgBox("Error" & ex.Message, MsgBoxStyle.Critical)
             Return False
         End Try
     End Function
@@ -200,7 +205,6 @@ Public Class ApiConnect
             resByte = webClient.UploadData(API_URL & strRoute, methodType, reqString)
             resString = Encoding.Default.GetString(resByte)
             json = JObject.Parse(resString)
-            ' MsgBox(json)
 
             If json.SelectToken("statusCode") = "200" Then
 
@@ -215,7 +219,8 @@ Public Class ApiConnect
             End If
 
         Catch ex As Exception
-            MsgBox("Error", ex.Message)
+            Console.WriteLine(ex.Message)
+            MsgBox("Error" & ex.Message, MsgBoxStyle.Critical)
             Return Nothing
         End Try
     End Function

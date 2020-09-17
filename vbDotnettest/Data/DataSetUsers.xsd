@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="hiwin_users" msprop:Generator_TableClassName="hiwin_usersDataTable" msprop:Generator_TableVarName="tablehiwin_users" msprop:Generator_TablePropName="hiwin_users" msprop:Generator_RowDeletingName="hiwin_usersRowDeleting" msprop:Generator_RowChangingName="hiwin_usersRowChanging" msprop:Generator_RowEvHandlerName="hiwin_usersRowChangeEventHandler" msprop:Generator_RowDeletedName="hiwin_usersRowDeleted" msprop:Generator_UserTableName="hiwin_users" msprop:Generator_RowChangedName="hiwin_usersRowChanged" msprop:Generator_RowEvArgName="hiwin_usersRowChangeEvent" msprop:Generator_RowClassName="hiwin_usersRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="userName" msprop:Generator_ColumnVarNameInTable="columnuserName" msprop:Generator_ColumnPropNameInRow="userName" msprop:Generator_ColumnPropNameInTable="userNameColumn" msprop:Generator_UserColumnName="userName" type="xs:string" minOccurs="0" />
+              <xs:element name="userFullname" msprop:Generator_ColumnVarNameInTable="columnuserFullname" msprop:Generator_ColumnPropNameInRow="userFullname" msprop:Generator_ColumnPropNameInTable="userFullnameColumn" msprop:Generator_UserColumnName="userFullname" type="xs:string" minOccurs="0" />
+              <xs:element name="userCid" msprop:Generator_ColumnVarNameInTable="columnuserCid" msprop:Generator_ColumnPropNameInRow="userCid" msprop:Generator_ColumnPropNameInTable="userCidColumn" msprop:Generator_UserColumnName="userCid" type="xs:string" minOccurs="0" />
+              <xs:element name="userRolebase" msprop:Generator_ColumnVarNameInTable="columnuserRolebase" msprop:Generator_ColumnPropNameInRow="userRolebase" msprop:Generator_ColumnPropNameInTable="userRolebaseColumn" msprop:Generator_UserColumnName="userRolebase" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
