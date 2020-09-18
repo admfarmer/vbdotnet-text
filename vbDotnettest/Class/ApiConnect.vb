@@ -207,11 +207,15 @@ Public Class ApiConnect
             json = JObject.Parse(resString)
 
             If json.SelectToken("statusCode") = "200" Then
+                If Not json.SelectToken("results").SelectToken("affectedRows") Is Nothing Then
+                    MsgBox("affectedRows" & json.SelectToken("results").SelectToken("affectedRows").ToString, MsgBoxStyle.Information)
+                    Return Nothing
+                Else
 
-                Dim jsonArray As JArray = json.SelectToken("results")
-                dt = Newtonsoft.Json.JsonConvert.DeserializeObject(Of DataTable)(jsonArray.ToString)
-
-                Return dt
+                    Dim jsonArray As JArray = json.SelectToken("results")
+                    dt = Newtonsoft.Json.JsonConvert.DeserializeObject(Of DataTable)(jsonArray.ToString)
+                    Return dt
+                End If
 
             Else
                 MsgBox("Error", MsgBoxStyle.Critical)
